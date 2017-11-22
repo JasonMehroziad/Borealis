@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4491486199636054}
   - component: {fileID: 212301645284415774}
   - component: {fileID: 114215892678372346}
-  - component: {fileID: 50796856552684722}
-  - component: {fileID: 60415252907797438}
+  - component: {fileID: 58928550329161140}
+  - component: {fileID: 50140199417957092}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -38,12 +38,12 @@ Transform:
   m_GameObject: {fileID: 1544156811852812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50796856552684722
+--- !u!50 &50140199417957092
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -62,9 +62,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!60 &60415252907797438
-PolygonCollider2D:
+  m_Constraints: 5
+--- !u!58 &58928550329161140
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -76,28 +76,8 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.6}
-    newSize: {x: 0.8, y: 0.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.13519101, y: 0.15185289}
-      - {x: 0.097411595, y: 0.17926455}
-      - {x: 0.027029436, y: 0.16704378}
-      - {x: 0.0007352432, y: 0.12926456}
-      - {x: 0.021102905, y: 0.026294153}
-      - {x: 0.066662036, y: -0.14148524}
-      - {x: 0.078146935, y: -0.16555874}
-      - {x: 0.08592665, y: -0.12889683}
-      - {x: 0.07741177, y: -0.1518529}
-      - {x: 0.115866706, y: -0.009462814}
-      - {x: 0.13926443, y: 0.07629415}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!114 &114215892678372346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +90,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+  xMin: -15
+  xMax: 15
+  yMin: -10
+  yMax: 10
+  target: Enemy
 --- !u!212 &212301645284415774
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -144,7 +129,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 37843417cbd6a364cb3fe947d25ff733, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f73e4402052a3c64c8963f27cb4f6477, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
