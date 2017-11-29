@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    private string orientation = "NULL";
+    public int health;
 
     public GameObject shot;
     public float moveSpeed = 50.0f;
@@ -16,6 +16,15 @@ public class PlayerController : MonoBehaviour {
 
     public float fireRate;
     public float nextFire = 0.0f;
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "EnemyShot")
+        {
+            health--;
+        }
+    }
 
     void Update()
     {
@@ -40,5 +49,10 @@ public class PlayerController : MonoBehaviour {
 
         //transform.Translate(x, 0, 0);
         //transform.Translate(0, y, 0);
+
+        if(health == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

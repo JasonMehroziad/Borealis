@@ -72,7 +72,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.7435544, y: 0.18589814}
@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51899bebd7a9a794eabcba12a9d35d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   shot: {fileID: 1544156811852812, guid: d7dba833344cfbc4ea32cdfab558a79d, type: 2}
-  shotSpawn: {fileID: 0}
   moveSpeed: 30
   xMin: -11.5
   xMax: 11.5

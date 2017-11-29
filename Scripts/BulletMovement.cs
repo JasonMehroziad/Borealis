@@ -16,11 +16,10 @@ public class BulletMovement : MonoBehaviour {
         GetComponent<Rigidbody2D>().velocity = Vector3.up * speed;
 	}
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == target)
         {
-            Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }
