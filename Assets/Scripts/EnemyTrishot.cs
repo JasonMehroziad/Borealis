@@ -15,7 +15,7 @@ public class EnemyTrishot : MonoBehaviour
 
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
+        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().transform.up * speed;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -32,19 +32,21 @@ public class EnemyTrishot : MonoBehaviour
         {
             Transform shotSpawn = gameObject.transform;
     
-            Instantiate(bullet, shotSpawn.position + Vector3.down, shotSpawn.rotation); //center
+            Instantiate(bullet, shotSpawn.position + shotSpawn.up, shotSpawn.rotation); //center
 
             shotSpawn.Rotate(Vector3.forward * -45);
-            Instantiate(bullet, shotSpawn.position + Vector3.down, shotSpawn.rotation); //right
+            Instantiate(bullet, shotSpawn.position + shotSpawn.up, shotSpawn.rotation); //right
 
             shotSpawn.Rotate(Vector3.forward * 90);
-            Instantiate(bullet, shotSpawn.position + Vector3.down, shotSpawn.rotation); //left
+            Instantiate(bullet, shotSpawn.position + shotSpawn.up, shotSpawn.rotation); //left
 
             shotSpawn.Rotate(Vector3.forward * -45);
             nextFire = Time.time + fireRate;
+
+
         }
 
-        if (health == 0)
+        if (health < 1)
         {
             Destroy(gameObject);
         }

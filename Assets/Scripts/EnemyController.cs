@@ -5,15 +5,27 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour {
 
     public int health;
-
     public float speed;
-    public GameObject shot;
+    public string direction;
 
+    public GameObject shot;
     public float fireRate;
     public float nextFire = 0.0f;
 
 	void Start () {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed); //for testing ONLY; in game velocity set by spawner
+
+        //GOES IN GAME CONTROLLER
+        //if(direction == "Left")        
+        //{
+        //    GetComponent<Rigidbody2D>().transform.Rotate(Vector3.forward * 90);
+        //}
+
+        //if (direction == "Right")
+        //{
+        //    GetComponent<Rigidbody2D>().transform.Rotate(Vector3.forward * -90);
+        //}
+
+        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().transform.up;// * speed;
 	}
 
     void OnTriggerEnter2D(Collider2D other)

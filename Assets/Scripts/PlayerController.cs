@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour {
 
     public int health;
     public int ammo;
+    private float moveSpeed = 50.0f;
+    private float lastHit;
     public GameObject special;
-
     public GameObject shot;
-    public float moveSpeed = 50.0f;
+    
 
     public float xMin;
     public float xMax;
@@ -22,9 +23,10 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "EnemyShot")
+        if (other.gameObject.tag == "Enemy" && Time.time > lastHit + 2.0f)
         {
             health--;
+            lastHit = Time.time;
         }
     }
 
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour {
         if(Input.GetButton("Special") && ammo > 0)
         {
             //later, use a switch for different specials
-            Instantiate(special, gameObject.transform.position, gameObject.transform.rotation);
+            Instantiate(special, gameObject.transform.position + Vector3.up * 1.2f, gameObject.transform.rotation);
             ammo--;
         }
 

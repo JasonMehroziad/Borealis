@@ -90,10 +90,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  xMin: -15
-  xMax: 15
-  yMin: -10
-  yMax: 10
   target: Enemy
 --- !u!212 &212301645284415774
 SpriteRenderer:
@@ -130,7 +126,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f73e4402052a3c64c8963f27cb4f6477, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9106312, g: 0.38754323, b: 0.9411765, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

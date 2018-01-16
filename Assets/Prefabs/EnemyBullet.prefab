@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50499292675284630}
   m_Layer: 0
   m_Name: EnemyBullet
-  m_TagString: EnemyShot
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,11 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f570aba730f789d4baabb0083bbbcc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  xMin: -15
-  xMax: 15
-  yMin: -10
-  yMax: 10
+  speed: 5
   target: Player
 --- !u!212 &212714120317215056
 SpriteRenderer:
@@ -129,8 +125,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 00577a103f3d9124cb761abcb1531151, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f73e4402052a3c64c8963f27cb4f6477, type: 3}
+  m_Color: {r: 1, g: 0, b: 0.009, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

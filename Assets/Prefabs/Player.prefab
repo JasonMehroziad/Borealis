@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1184643868961352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23, y: -7.97, z: 0}
+  m_LocalPosition: {x: 0, y: -7.47, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,8 +90,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  ammo: 1
+  special: {fileID: 1337468026740872, guid: 9ce0622ed00ec7f419098e5984e1105c, type: 2}
   shot: {fileID: 1544156811852812, guid: d7dba833344cfbc4ea32cdfab558a79d, type: 2}
-  moveSpeed: 30
+  moveSpeed: 20
   xMin: -11.5
   xMax: 11.5
   yMin: -8
@@ -133,7 +135,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 255ca443fb843b544a9bc6129fcdce33, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7607844, g: 0.359, b: 0.7607844, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

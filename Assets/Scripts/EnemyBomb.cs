@@ -14,7 +14,7 @@ public class EnemyBomb : MonoBehaviour
 
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed); //for testing ONLY; in game velocity set by spawner
+        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().transform.up * speed;
         timer += Time.time;
     }
 
@@ -28,7 +28,7 @@ public class EnemyBomb : MonoBehaviour
 
     void Update()
     {
-        if (Time.time > timer)
+        if (Time.time > timer || health < 1)
         {
             Transform shotSpawn = gameObject.transform;
             for (int i = 0; i < 8; i++)

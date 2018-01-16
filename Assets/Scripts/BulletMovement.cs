@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class BulletMovement : MonoBehaviour {
 
-    public float speed;
-    public float xMin;
-    public float xMax;
-    public float yMin;
-    public float yMax;
+    public float speed; 
     public string target;
+
+    private float xMin = -15f;
+    private float xMax = 15f;
+    private float yMin = -10f;
+    private float yMax = 10f;
 
     void Start ()
     {
