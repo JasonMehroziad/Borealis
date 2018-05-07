@@ -14,6 +14,7 @@ public class ArcusMovement : MonoBehaviour {
     void Start ()
     {
         GetComponent<Rigidbody2D>().velocity = Vector2.up * startSpeed;
+        GetComponent<Rigidbody2D>().transform.Rotate(Vector3.forward * 180);
         scale = 1.0f;   
     }
 	

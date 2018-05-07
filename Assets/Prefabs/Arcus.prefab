@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212054935658780722}
   - component: {fileID: 50682516260305128}
   - component: {fileID: 114210272405204640}
-  - component: {fileID: 60384971085494774}
+  - component: {fileID: 60374923107667474}
   m_Layer: 0
   m_Name: Arcus
   m_TagString: Untagged
@@ -36,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1337468026740872}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -3.42, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: -7.0470953, y: -7.711137, z: -0.13219261}
+  m_LocalScale: {x: 5, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!50 &50682516260305128
 Rigidbody2D:
   serializedVersion: 4
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &60384971085494774
+--- !u!60 &60374923107667474
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -79,7 +79,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 1}
+    oldSize: {x: 0.61, y: 0.28}
     newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -87,49 +87,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.11, y: -0.35999998}
-      - {x: -2.1, y: -0.39}
-      - {x: -2.06, y: -0.39}
-      - {x: -2.04, y: -0.37}
-      - {x: -2.05, y: -0.34}
-      - {x: -2.09, y: -0.34}
-    - - {x: -1.04, y: -0.22999999}
-      - {x: -0.78999996, y: -0.21}
-      - {x: -0.47, y: -0.19}
-      - {x: -0.45999998, y: -0.17999999}
-      - {x: 0.48, y: -0.17999999}
-      - {x: 0.48999998, y: -0.19}
-      - {x: 0.81, y: -0.21}
-      - {x: 1.0699999, y: -0.22999999}
-      - {x: 1.1999999, y: -0.25}
-      - {x: 1.63, y: -0.29999998}
-      - {x: 1.9399999, y: -0.35999998}
-      - {x: 2, y: -0.35}
-      - {x: 2, y: -0.26999998}
-      - {x: 1.8499999, y: -0.14999999}
-      - {x: 1.54, y: -0.01}
-      - {x: 1.3299999, y: 0.03}
-      - {x: 0.96, y: 0.099999994}
-      - {x: 0.32999998, y: 0.17}
-      - {x: -0.32, y: 0.17}
-      - {x: -0.55, y: 0.14999999}
-      - {x: -0.63, y: 0.14}
-      - {x: -0.75, y: 0.13}
-      - {x: -0.91999996, y: 0.11}
-      - {x: -1.05, y: 0.099999994}
-      - {x: -1.37, y: 0.03}
-      - {x: -1.54, y: -0.02}
-      - {x: -1.75, y: -0.089999996}
-      - {x: -1.9499999, y: -0.19999999}
-      - {x: -2.01, y: -0.24}
-      - {x: -2.05, y: -0.32}
-      - {x: -2.05, y: -0.35}
-      - {x: -2.04, y: -0.37}
-      - {x: -1.9599999, y: -0.37}
-      - {x: -1.91, y: -0.35999998}
-      - {x: -1.74, y: -0.32}
-      - {x: -1.35, y: -0.26}
-      - {x: -1.18, y: -0.25}
+    - - {x: 0.275, y: 0.13}
+      - {x: -0.105, y: -0.01}
+      - {x: -0.285, y: 0.13}
+      - {x: -0.305, y: 0.13}
+      - {x: -0.305, y: -0.049999997}
+      - {x: -0.225, y: -0.14}
+      - {x: 0.205, y: -0.14}
+      - {x: 0.305, y: -0.02}
+      - {x: 0.305, y: 0.13}
 --- !u!114 &114210272405204640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d7b2496c02fc342adc8d2f58c1f341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 0.05
+  startSpeed: 1.2
   accel: 1.001
 --- !u!212 &212054935658780722
 SpriteRenderer:
@@ -177,8 +143,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a2ee21ecba3175240b3887ecad386917, type: 3}
-  m_Color: {r: 0.966, g: 0.791, b: 0.03957611, a: 1}
+  m_Sprite: {fileID: 21300004, guid: 38aa0d7d75027d3428b147cfb8010b27, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

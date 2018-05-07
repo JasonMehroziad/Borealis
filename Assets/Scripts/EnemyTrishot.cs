@@ -46,7 +46,8 @@ public class EnemyTrishot : MonoBehaviour
 
         }
 
-        if (health < 1)
+        if (health < 1 || transform.position.x > 20.0 || transform.position.x < -25.0 
+            || transform.position.y > 20.0 || transform.position.y < -15.0)
         {
             Destroy(gameObject);
         }

@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetButton("Special") && ammo > 0)
+        if(Input.GetButton("Fire2") && ammo > 0)
         {
             //later, use a switch for different specials
             Instantiate(special, gameObject.transform.position + Vector3.up * 1.2f, gameObject.transform.rotation);
@@ -57,9 +57,6 @@ public class PlayerController : MonoBehaviour {
 
         GetComponent<Rigidbody2D>().position = new Vector2(Mathf.Clamp(GetComponent<Rigidbody2D>().transform.position.x, xMin, xMax),
             Mathf.Clamp(GetComponent<Rigidbody2D>().transform.position.y, yMin, yMax));
-
-        //transform.Translate(x, 0, 0);
-        //transform.Translate(0, y, 0);
 
         if(health == 0)
         {

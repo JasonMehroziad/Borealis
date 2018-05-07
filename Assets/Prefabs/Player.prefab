@@ -93,7 +93,6 @@ MonoBehaviour:
   ammo: 1
   special: {fileID: 1337468026740872, guid: 9ce0622ed00ec7f419098e5984e1105c, type: 2}
   shot: {fileID: 1544156811852812, guid: d7dba833344cfbc4ea32cdfab558a79d, type: 2}
-  moveSpeed: 20
   xMin: -11.5
   xMax: 11.5
   yMin: -8

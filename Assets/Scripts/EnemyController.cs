@@ -13,19 +13,7 @@ public class EnemyController : MonoBehaviour {
     public float nextFire = 0.0f;
 
 	void Start () {
-
-        //GOES IN GAME CONTROLLER
-        //if(direction == "Left")        
-        //{
-        //    GetComponent<Rigidbody2D>().transform.Rotate(Vector3.forward * 90);
-        //}
-
-        //if (direction == "Right")
-        //{
-        //    GetComponent<Rigidbody2D>().transform.Rotate(Vector3.forward * -90);
-        //}
-
-        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().transform.up;// * speed;
+        GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().transform.up * speed;
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -43,7 +31,8 @@ public class EnemyController : MonoBehaviour {
             nextFire = Time.time + fireRate;
         }
 
-        if(health == 0)
+        if (health < 1 || transform.position.x > 20.0 || transform.position.x < -25.0
+            || transform.position.y > 20.0 || transform.position.y < -15.0)
         {
             Destroy(gameObject);
         }
