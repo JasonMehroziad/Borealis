@@ -30,10 +30,11 @@ public class GameController : MonoBehaviour {
 
         yield return new WaitForSeconds(5.0f);
 
-        Instantiate(enemy1, top_left.transform.position, top_center.transform.rotation);
+        Instantiate(enemy1, top_left.transform.position, top_left.transform.rotation);
         Instantiate(enemy1, bottom_right.transform.position, top_center.transform.rotation);
 
 
+        yield return new WaitForSeconds(5.0f);
 
 
         /*

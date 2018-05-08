@@ -383,8 +383,9 @@ MonoBehaviour:
   enemy1: {fileID: 1013491910680996, guid: e7d8cba44c0ccc84ba4410052e157e88, type: 2}
   enemy2: {fileID: 1581382037227324, guid: da40f99e46468cc47bbec5a7f8d12356, type: 2}
   top_center: {fileID: 1970262449433360, guid: 3d69eaf3e7225694e8447abd0128c51f, type: 2}
-  top_left: {fileID: 0}
-  bottom_right: {fileID: 0}
+  top_left: {fileID: 1606878643996378, guid: ae72c3905a92ad249bfcad77fc4e2477, type: 2}
+  bottom_right: {fileID: 1720450039799830, guid: 4d0b9790ad7666e4d9848493037ea21b,
+    type: 2}
 --- !u!1001 &890137169
 Prefab:
   m_ObjectHideFlags: 0

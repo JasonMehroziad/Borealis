@@ -7,8 +7,8 @@ public class BulletMovement : MonoBehaviour {
     public float speed; 
     public string target;
 
-    private float xMin = -15f;
-    private float xMax = 15f;
+    private float xMin = -18f;
+    private float xMax = 5f;
     private float yMin = -10f;
     private float yMax = 10f;
 
