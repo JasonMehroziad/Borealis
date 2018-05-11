@@ -47,7 +47,6 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-
     void FixedUpdate()
     {
         float x = Input.GetAxis("Horizontal"); 
