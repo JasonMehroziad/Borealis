@@ -27,10 +27,10 @@ public class BulletMovement : MonoBehaviour {
 
     void Update()
     {
-        if (gameObject.transform.position.x < xMin || gameObject.transform.position.x > xMax 
-            || gameObject.transform.position.y < yMin || gameObject.transform.position.y > yMax)
-        {
-            Destroy(gameObject);
-        }
+        //if (gameObject.transform.position.x < xMin || gameObject.transform.position.x > xMax 
+        //    || gameObject.transform.position.y < yMin || gameObject.transform.position.y > yMax)
+        //{
+        //    Destroy(gameObject);
+        //}
     }
 }

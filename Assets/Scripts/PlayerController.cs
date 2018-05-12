@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Enemy" && Time.time > lastHit + 2.0f)
+        if ((other.gameObject.tag == "Enemy" || other.gameObject.tag == "EnemyShot") && Time.time > lastHit + 2.0f)
         {
             health--;
             lastHit = Time.time;
@@ -32,18 +32,18 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetButton("Fire2") && ammo > 0)
-        {
-            //later, use a switch for different specials
-            Instantiate(special, gameObject.transform.position + Vector3.up * 1.2f, gameObject.transform.rotation);
-            ammo--;
-        }
-
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, gameObject.transform.position + Vector3.up + Vector3.left, gameObject.transform.rotation);
             Instantiate(shot, gameObject.transform.position + Vector3.up + Vector3.right, gameObject.transform.rotation);
+        }
+
+        if (Input.GetButton("Fire2") && ammo > 0)
+        {
+            //later, use a switch for different specials
+            Instantiate(special, gameObject.transform.position + Vector3.up * 1.2f, gameObject.transform.rotation);
+            ammo--;
         }
     }
 
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour {
         GetComponent<Rigidbody2D>().position = new Vector2(Mathf.Clamp(GetComponent<Rigidbody2D>().transform.position.x, xMin, xMax),
             Mathf.Clamp(GetComponent<Rigidbody2D>().transform.position.y, yMin, yMax));
 
-        if(health == 0)
+        if(health < 1)
         {
             Destroy(gameObject);
         }

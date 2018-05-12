@@ -6,6 +6,8 @@ MonoImporter:
   defaultReferences:
   - enemy1: {fileID: 1013491910680996, guid: e7d8cba44c0ccc84ba4410052e157e88, type: 2}
   - enemy2: {fileID: 1581382037227324, guid: da40f99e46468cc47bbec5a7f8d12356, type: 2}
+  - enemy3: {fileID: 1490239054769776, guid: b9bdb1d9b923a50489a0e7ae37f23d8d, type: 2}
+  - enemy4: {fileID: 1330511425892442, guid: aa0f343f2e6d873469bb7fb0a0d4b39a, type: 2}
   - top_center: {fileID: 1970262449433360, guid: 3d69eaf3e7225694e8447abd0128c51f,
       type: 2}
   - top_left: {fileID: 1606878643996378, guid: ae72c3905a92ad249bfcad77fc4e2477, type: 2}
@@ -23,7 +25,7 @@ MonoImporter:
       type: 2}
   - upper_right: {fileID: 1645881618218632, guid: b861b8c288f01e441a3fdfeedd61c7ab,
       type: 2}
-  - middle_right: {fileID: 1900862229803394, guid: b4fc5cee79d3b2f41b715a6a2660fca8,
+  - middle_right: {fileID: 1582837157133184, guid: 5cdb1beb3fbd84b47bd41e946ff0763b,
       type: 2}
   - lower_right: {fileID: 1538778648365732, guid: 4ddb0375083e5b64c87e32c9c3cf9a3e,
       type: 2}
@@ -33,9 +35,9 @@ MonoImporter:
       type: 2}
   - bottom_right: {fileID: 1720450039799830, guid: 4d0b9790ad7666e4d9848493037ea21b,
       type: 2}
-  - bottom_left_corner: {fileID: 1593978427209838, guid: d76359958e82778409052333cc05938b,
+  - bottom_left_corner: {fileID: 1859493043650426, guid: b0c3be2711759704d94fda55255acc79,
       type: 2}
-  - bottom_right_corner: {fileID: 1077136845870576, guid: 5d30a972628ae1542805319f634ae59b,
+  - bottom_right_corner: {fileID: 1122701303614516, guid: 1bc52d824e26a4240871ec6e61b4f92e,
       type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
