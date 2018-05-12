@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
 
     IEnumerator SpawnSystem()
     {
-        Frame1
+        //Frame1
         yield return new WaitForSeconds(3.0f);
 
         //Frame2
